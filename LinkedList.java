@@ -31,10 +31,13 @@ public class LinkedList extends Node
 		else
 		{
 			Node temp=head;
-			while(temp.getNext())
+			while(temp.getNext()!=null)
 			{
-				
+				temp=temp.getNext();
 			}
+			temp.setNext(param);
 		}
 	}
+	
+	
 }
