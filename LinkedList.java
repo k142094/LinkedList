@@ -22,6 +22,19 @@ public class LinkedList extends Node
 			param.setNext(temp);
 		}
 	}
+	public Node pop_front()
+	{
+		if(is_empty())
+		{
+			return null;
+		}
+		else{
+			Node safenode=head;
+			head=head.getNext();
+			safenode.setNext(null);
+			return safenode;
+		}
+	}
 	public void push_back(Node param)
 	{
 		if(is_empty())
@@ -55,5 +68,4 @@ public class LinkedList extends Node
 			return safenode;
 		}
 	}
-	
 }
