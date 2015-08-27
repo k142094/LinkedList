@@ -19,7 +19,7 @@ public class Node
 	{
 		this.data=param;
 	}
-	protected void  setNext(Node param)
+	protected void setNext(Node param)
 	{
 		this.data=param;
 	}
