@@ -1,0 +1,14 @@
+
+	public void push_front(Node param)
+	{
+		if(is_empty())
+		{
+			head=param;
+		}
+		else
+		{
+			Node temp=head;
+			head=param;
+			param.setNext(temp);
+		}
+	}
